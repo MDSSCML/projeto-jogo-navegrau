@@ -1,0 +1,52 @@
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Jogo</title>
+    <style>
+        #boneco {
+            position: absolute;
+            left: 0;
+            top: 50%;
+            width: 100px;
+            height: 100px;
+            background: url('https://img.freepik.com/vetores-gratis/urso-bonito-no-aviao-de-pilotagem-lenco-vermelho_74855-131.jpg?size=626&ext=jpg&ga=GA1.1.1095817977.1704973718&semt=ais') no-repeat;
+            background-size: cover;
+        }
+
+        #multiplicador {
+            font-size: 2em;
+            margin-bottom: 20px;
+        }
+
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            /* height: 100vh; */
+        }
+
+        button {
+            margin: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div id="totalGanho"></div>
+        <div id="multiplicador">1x</div>
+        <input type="number" id="valor" placeholder="Digite o valor da aposta">
+        <button onclick="capturarAposta()">Apostar</button>
+        <button onclick="iniciar()">Iniciar</button>
+        <button onclick="descontar()">Descontar</button>
+        <div id="boneco"></div>
+    </div>
+    <script src="./script.js"></script>
+</body>
+
+</html>
