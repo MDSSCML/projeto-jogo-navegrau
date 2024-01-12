@@ -1,7 +1,6 @@
 
 # projeto jogo navegrau
 
-Aqui está um readme para o jogo Navegrau feito em JavaScript vanilla:
 
 **Sobre**
 
